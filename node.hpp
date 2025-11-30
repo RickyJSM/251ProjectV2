@@ -16,9 +16,13 @@ class node {
         }
 
         //accessors
-        T getData() {
+        T& getData() {
             return data;
         }
+        const T& getData() const {
+            return data;
+        }
+        
         node<T>* getNext() {
             return next;
         }
